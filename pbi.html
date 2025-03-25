@@ -1,50 +1,123 @@
 <!DOCTYPE HTML>
-
 <html>
-	<head>
-		<title>PBI - MMB</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <style>
-            body {
-              margin: 0;
-              padding: 0;
-            }
-            #main {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              height: 100vh; /* Full viewport height */
-              text-align: center;
-              width: 100%; /* Full width */
-            }
-          </style>
-	</head>
-	<body class="is-preload">
-		<!-- Main -->
-			<div id="main">
+<head>
+    <title>PBI - MMB</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            text-align: center;
+            width: 100%; /* Full width */
+            flex-direction: column; /* Ensure content stacks vertically */
+        }
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left; /* Align text to the left */
+            width: 100%; /* Ensure the wrapper takes the full width */
+        }
+        .image-wrapper img {
+            max-width: 100%; /* Ensure the image scales with its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .icon-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px; /* Add some spacing above */
+        }
+        .icon-link h3 {
+            margin: 0; /* Remove margin from h3 */
+            display: flex;
+            align-items: center;
+            margin-right: 10px; /* Add space between h3 and a */
+        }
+        .icon-link h3 .label {
+            margin-right: 5px; /* Reduce space between icon and text */
+        }
+        .actions {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%; /* Ensure full width for centering */
+            margin-top: 20px; /* Add some spacing above the button */
+        }
+        .actions li {
+            display: flex;
+            justify-content: center;
+            width: 100%; /* Ensure the li takes full width for centering */
+        }
+        section#one {
+            margin-top: 20px; /* Add margin to the top of the section */
+            padding: 0 20px; /* Add padding to ensure content is not cut off */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+            max-width: 100%; /* Ensure the section does not exceed the viewport width */
+        }
+        header.major {
+            width: 100%;
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+        header.major h2 {
+            word-wrap: break-word; /* Ensure long words break to the next line */
+        }
+        h3, p, li {
+            text-align: left; /* Align all h3, p, and li elements to the left */
+        }
+        p, ul {
+            margin-top: 0; /* Remove top margin */
+            margin-bottom: 10px; /* Adjust bottom margin as needed */
+        }
+    </style>
+</head>
+<body class="main">
+    <section id="one">
+        <header class="major">
+            <h2>Relatório em Power BI</h2>
+        </header>
+        <h3>Dashboard Visão Geral<br/></h3>
+        <p>Componentes:</p>
+        <div class="content">
+            <ul>
+                <li>Cartões</li>
+                <li>Gráficos</li>
+                <li>Tabela</li>
+                <li>Segmentação de dados</li>
+            </ul>
+        </div>
+        <div class="image-wrapper">
+            <p class="image"><img src="images/projects_pbi_1/dash_1_small.png" alt="Dashboard 1"/></p>
+        </div>
+        <p>Esta visão consolida todas as informações referentes à quantidade de hóspedes....<br/><br/></p>
+        <h3>Dashboard Visão de imóveis por Região<br/></h3>
+        <p>Componentes:</p>
+        <div class="content">
+            <ul>
+                <li>Matriz</li>
+                <li>Gráfico</li>
+                <li>Mapa</li>
+            </ul>
+        </div>
+        <div class="image-wrapper">
+            <p class="image"><img src="images/projects_pbi_1/dash_2_small.png" alt="Dashboard 2"/></p>
+        </div>
+        <p>Esta visão consolida todas as informações referentes à localidade das hospedagens....<br/><br/></p>
 
-				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Olá</h2>
-                            <p class="image"><img src="images/projects_pbi_1/dash_1_small.png"/></p>
-                            <p class="image"><img src="images/projects_pbi_1/dash_2_small.png"/></p>
-						</header>
-						<p>Teste.<br />
-     
-                            <ul class="labeled-icons">
-                                <li>
-                                    <h3 class="icon brands fa-github"><span class="label">Acesse o repositório</span></h3>
-                                    <a href="https://github.com/mm-borges/AirBnB-in-NY">Acesse o repositório</a>
-                                </li>
-                            </ul>
-                            
-                            <ul class="actions">
-                                <li><a href="index.html" class="button">Página inicial</a></li>
-                            </ul>
-					</section>
-
-	</body>
+        <div class="icon-link">
+            <h3 class="icon brands fa-github"><span class="label"></h3>
+            <a href="https://github.com/mm-borges/AirBnB-in-NY">Acesse o repositório</a>
+        </div>
+        <ul class="actions">
+            <li><a href="index.html" class="button">Página inicial</a></li>
+        </ul>
+    </section>
+</body>
 </html>
