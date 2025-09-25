@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Python - MMB</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full viewport height */
+            text-align: center;
+            width: 100%; /* Full width */
+            flex-direction: column; /* Ensure content stacks vertically */
+        }
+        .image-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: left; /* Align text to the left */
+            width: 100%; /* Ensure the wrapper takes the full width */
+        }
+        .image-wrapper img {
+            max-width: 100%; /* Ensure the image scales with its container */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .icon-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px; /* Add some spacing above */
+        }
+        .icon-link h3 {
+            margin: 0; /* Remove margin from h3 */
+            display: flex;
+            align-items: center;
+            margin-right: 10px; /* Add space between h3 and a */
+        }
+        .icon-link h3 .label {
+            margin-right: 5px; /* Reduce space between icon and text */
+        }
+        .actions {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            width: 100%; /* Ensure full width for centering */
+            margin-top: 20px; /* Add some spacing above the button */
+        }
+        .actions li {
+            display: flex;
+            justify-content: center;
+            width: 100%; /* Ensure the li takes full width for centering */
+        }
+        section#one {
+            margin-top: 20px; /* Add margin to the top of the section */
+            padding: 0 20px; /* Add padding to ensure content is not cut off */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+            max-width: 100%; /* Ensure the section does not exceed the viewport width */
+        }
+        header.major {
+            width: 100%;
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+        header.major h2 {
+            word-wrap: break-word; /* Ensure long words break to the next line */
+        }
+        h3, p, li {
+            text-align: left; /* Align all h3, p, and li elements to the left */
+        }
+        p, ul {
+            margin-top: 0; /* Remove top margin */
+            margin-bottom: 10px; /* Adjust bottom margin as needed */
+        }
+    </style>
+</head>
+<body class="main">
+    <section id="one">
+        <header class="major">
+            <h2>Dashboard em Pyhton</h2>
+        </header>
+
+        <div class="icon-link">
+            <h3 class="fa-line-chart"><span class="label"></h3>
+            <a href="https://mmb-currycompany.streamlit.app/">Acesse o Dashboard interativo</a>
+        </div>
+
+        <h3>Dashboard Visão Empresa<br/></h3>
+        <p>Métricas da Empresa:</p>
+        <div class="content">
+            <ul>
+                <li>Volume total de pedidos</li>
+                <li>Tendências temporais (diário/semanal)</li>
+                <li>Distribuição geográfica</li>
+                <li>Análise de tráfego urbano</li>
+            </ul>
+        </div>
+        <div class="image-wrapper">
+            <p class="image"><img src="images/projects_python_curry_company/dash_visao_empresa_gerencial.png" alt="Dashboard 1"/></p>
+        </div>
+        <p>O relatório contempla a quantidade de pedidos por dia e por semana, a distribuição de pedidos por tipo de tráfego e a comparação do volume de pedidos por cidade e tipo de tráfego.<br/><br/></p>
+        <div class="image-wrapper">
+            <p class="image"><img src="images/projects_python_curry_company/dash_visao_empresa_tatica.png" alt="Dashboard 1"/></p>
+        </div>
+        <p>Esta página contém análise de pedidos por entregador por semana.<br/><br/></p>
+        <div class="image-wrapper">
+            <p class="image"><img src="images/projects_python_curry_company/dash_visao_empresa_geografica.png" alt="Dashboard 1"/></p>
+        </div>
+        <p>Esta página contém um mapa interativo com localização central por cidade e tipo de tráfego.<br/><br/></p>
+
+        <h3>Dashboard Visão Entregadores<br/></h3>
+        <p>Métricas dos Entregadores:</p>
+        <div class="content">
+            <ul>
+                <li>Performance individual</li>
+                <li>Avaliações de qualidade</li>
+                <li>Eficiência de entrega</li>
+                <li>Análise de condições operacionais</li>
+            </ul>
+        </div>
+        <div class="image-wrapper">
+            <p class="image"><img src="images/projects_python_curry_company/dash_visao_entregadores.png" alt="Dashboard 1"/></p>
+        </div>
+        <p>A análise resume faixa etária dos entregadores, condição dos veículos, avaliações médias, variações por tráfego e clima e o ranking dos 10 mais rápidos e lentos por cidade.<br/><br/></p>
+
+        <h3>Dashboard Visão Restaurante<br/></h3>
+        <p>Métricas dos Restaurante:</p>
+        <div class="content">
+            <ul>
+                <li>Tempos de entrega</li>
+                <li>Distâncias percorridas</li>
+                <li>Impacto de eventos especiais</li>
+                <li>Análise comparativa por região</li>
+            </ul>
+        </div>
+        <div class="image-wrapper">
+            <p class="image"><img src="images/projects_python_curry_company/dash_visao_restaurantes.png" alt="Dashboard 1"/></p>
+        </div>
+        <p>A análise inclui número de entregadores, distâncias médias, tempos de entrega por cidade, comparação entre dias festivos e comuns e detalhamento por tipo de pedido..<br/><br/></p>
+     
+        <div class="icon-link">
+            <h3 class="icon brands fa-github"><span class="label"></h3>
+            <a href="https://github.com/mm-borges/curry_company">Acesse o repositório</a>
+        </div>
+        <ul class="actions">
+            <li><a href="index.html" class="button">Página inicial</a></li>
+        </ul>
+    </section>
+</body>
+</html>
